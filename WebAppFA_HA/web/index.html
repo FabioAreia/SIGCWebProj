@@ -6,11 +6,180 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Youtube Comments - SIGC</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="sigc.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="menu" style="width:100%;height: 40px;">
+            <div class="menuitem" onclick="showMenu(1);">
+                Classificação
+            </div>
+            <div class="menuitem" onclick="showMenu(2);">
+                Procura
+            </div>
+            <div class="menuitem" onclick="showMenu(3);">
+                Estatísticas
+            </div>
+            <div class="menuitem" onclick="showMenu(4);">
+                Sentimental
+            </div>
+        </div>
+        <div id="content_1" class="contentpanel">
+            <div class="divprocura">
+                <label for="procura" class="procura">Comment: </label><br/>
+                <textarea id="procuraclass" class="procuraarea"></textarea><br/>
+                <input type="button" class="butao" value="search comments" onclick="classifycomment();"/>
+            </div>
+            <div id="classification" class="results">
+                
+            </div>
+        </div>
+        <div id="content_2" class="contentpanel">
+            <div class="divprocura">
+                <label for="procuraclass" class="procura">Procura: </label>
+                <input id="procura" class="inputprocura" />
+                <input type="button" class="butao" value="search comments" onclick="searchcomments(0);"/>
+            </div>
+            <div id="pages" class="pages">
+                <input type="button" class="butao" value="start" onclick="startpage();"/>
+                <input type="button" class="butao" value="previous" onclick="previouspage();"/>
+                <input type="button" class="butao" value="next" onclick="nextpage();"/>
+                <input type="button" class="butao" value="end" onclick="endpage();"/>
+            </div>
+            <div class="ui-widget" style="margin-top:2em; font-family:Arial;display:none;">
+                Result:
+                <div id="log" style="height: 200px; width: 300px; overflow: auto;" class="ui-widget-content"></div>
+            </div>
+            <div id="resultstitle" class="resultstitle"></div>
+            <div id="results" class="results"></div>
+        </div>
+        <div id="content_3" class="contentpanel">
+            Content 3
+        </div>
+        <div id="content_4" class="contentpanel">
+            Content 4
+        </div>
+        <script>
+            
+            var currentMenu = 1;
+            var currentPage = 0;
+            var totalpages = 0;
+            var currSearch = "";
+            
+            function initStuff(){
+                $('#pages').hide();
+                showMenu(2);
+            }
+            
+            function showMenu(idx){
+                $('#content_1').hide();
+                $('#content_2').hide();
+                $('#content_3').hide();
+                $('#content_4').hide();
+                
+                $('#content_'+idx).show();
+                currentMenu = idx;
+            }
+            
+            function startpage(){
+                searchc(0);
+                currentPage = 0;
+            }
+            function endpage(){
+                searchc(totalpages);
+                currentPage = totalpages;
+            }
+            function previouspage(){
+                currentPage--;
+                if(currentPage<0)
+                    currentPage=0;
+                searchc(currentPage);
+            }
+            function nextpage(){
+                currentPage++;
+                if(currentPage>totalpages)
+                    currentPage=totalpages;
+                searchc(currentPage);
+            }
+            
+            function searchcomments(pagina){
+                
+                var searchtext = $('#procura').val();
+                currSearch = searchtext;
+                searchc(pagina);
+            }
+            function searchc(pagina){
+                var numperpage = 5;
+                var searchtext = currSearch;
+                //alert(searchtext);
+                $.get( "http://localhost:8080/comments/sigc/pesquisa", { "query": searchtext, "page":pagina, "numperpage":numperpage } )
+                    .done(function( data ) {
+                        var dataqry = jQuery.parseJSON(data);
+                        //alert(dataqry['results']);
+                        if(dataqry['results']>numperpage){
+                            $('#pages').show();
+                            totalpages = Math.ceil(dataqry['results']/numperpage);
+                        }
+                        $('#results').empty();
+                        data = dataqry['docs'];
+                        for (var h=0; h<data.length; h++){
+                            
+                            //alert(data[h]["titulo"]);
+                            var tempelem = $("<div class=\"resultado\">");
+                            tempelem.appendTo('#results');
+                            $("<div class=\"score\">").html("Score: "+parseFloat(data[h]["searchscore"]).toFixed(2)).appendTo(tempelem);
+                            $("<div class=\"canal\">").html("Canal: "+data[h]["canal"]).appendTo(tempelem);
+                            $("<div class=\"titulo\">").html("Título: "+data[h]["titulo"]).appendTo(tempelem);
+                            $("<div class=\"tema\">").html("Tema: "+data[h]["tema"]).appendTo(tempelem);
+                            $("<div class=\"user\">").html("User: "+data[h]["user"]).appendTo(tempelem);
+                            $("<div class=\"rating\">").html("Rating: "+data[h]["score"]).appendTo(tempelem);
+                            $("<div class=\"likes\">").html("Likes: "+data[h]["likes"]).appendTo(tempelem);
+                            $("<div class=\"likes\">").html("Dislikes: "+data[h]["dislikes"]).appendTo(tempelem);
+                            $("<div class=\"comment\">").html("Comment: "+data[h]["comment"]).appendTo(tempelem);
+                        }
+                    });
+            }
+            
+            
+            function classifycomment(){
+                
+                var searchtext = $('#procuraclass').val();
+                //alert(searchtext);
+                $.get( "http://localhost:8080/comments/sigc/pesquisa/class", { "query": searchtext } )
+                    .done(function( data ) {
+                        var dataqry = jQuery.parseJSON(data);
+                        //alert(dataqry['result']);
+                        var tempelem = $("<div class=\"resultado\">");
+                            tempelem.appendTo('#classification');
+                            $("<div class=\"comment\">").html("Canal: "+dataqry['result']).appendTo(tempelem);
+                    });
+            }
+            
+            
+            $(function() {
+                function log(message) {
+                    $("<div>").text(message).prependTo("#log");
+                    $("#log").scrollTop(0);
+                }
+                $("#procura").autocomplete({
+                    
+                    source: "http://localhost:8080/comments/sigc/autocomplete",
+                    minLength: 3,
+                    select: function(event, ui) {
+                        /*log(ui.item ?
+                                "Selected: " + ui.item.value + " aka " + ui.item.id :
+                                "Nothing selected, input was " + this.value);*/
+                    }
+                });
+                
+                initStuff();
+            });
+        </script>
     </body>
 </html>
