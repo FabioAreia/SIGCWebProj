@@ -15,10 +15,15 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.MediaType;
 import open.nlp.LuceneBuilder;
 import open.nlp.OpenNLP;
+import open.nlp.SeparateAdjectives;
+import open.nlp.classC;
+import open.nlp.classS;
 
 /**
  * REST Web Service
@@ -44,32 +49,55 @@ public class PesquisaRest {
     @GET
     @Consumes("text/plain")
     @Produces("text/plain")
-    public String getText(@QueryParam("query") String texto,@QueryParam("page") int page,@QueryParam("numperpage") int numperpage){
+    public String getText(@QueryParam("query") String texto,@QueryParam("page") int page,@QueryParam("numperpage") int numperpage,@QueryParam("toget") String toget){
         //TODO return proper representation object
         LuceneBuilder lb = new LuceneBuilder();
         
         String result;
         try {
             result = java.net.URLDecoder.decode(texto.replaceAll("[^A-Za-z0-9 ]", ""), "UTF-8");
-            return lb.searchLuceneFuzzy(result, page, numperpage);
+            System.out.println("INININ:"+texto.replaceAll("[^A-Za-z0-9 ]", ""));
+            return lb.searchLuceneFuzzy(result, page, numperpage,toget);
         } catch (UnsupportedEncodingException ex) {
             Logger.getLogger(PesquisaRest.class.getName()).log(Level.SEVERE, null, ex);
         }
         return "{\"results\":0,\"docs\":[]}";
     }
     
-    @GET
+    @POST
     @Path("class")
-    @Consumes("text/plain")
-    @Produces("text/plain")
-    public String getClass(@QueryParam("query") String texto){
+    @Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+    public String getClass(classC res){
         //TODO return proper representation object
         
-        
+        String texto = res.getQuery();
+        System.out.println("INININ:"+texto.replaceAll("[^A-Za-z0-9 ]", ""));
         String result;
         try {
             result = java.net.URLDecoder.decode(texto.replaceAll("[^A-Za-z0-9 ]", ""), "UTF-8");
+            
             return "{\"result\":\""+OpenNLP.classifyModel(result)+"\"}";
+        } catch (UnsupportedEncodingException ex) {
+            Logger.getLogger(PesquisaRest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return "{\"result\":\"\"}";
+    }
+    
+    @POST
+    @Path("sentiment")
+    @Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+    @Produces({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })
+    public String getClass(classS res){
+        //TODO return proper representation object
+        
+        String texto = res.getQuery();
+        System.out.println("INININ:"+texto.replaceAll("[^A-Za-z0-9 ]", ""));
+        String result;
+        try {
+            result = java.net.URLDecoder.decode(texto.replaceAll("[^A-Za-z0-9 ]", ""), "UTF-8");
+            
+            return "{\"result\":\""+SeparateAdjectives.evaluateComment(result)+"\"}";
         } catch (UnsupportedEncodingException ex) {
             Logger.getLogger(PesquisaRest.class.getName()).log(Level.SEVERE, null, ex);
         }

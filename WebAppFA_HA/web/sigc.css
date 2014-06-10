@@ -11,7 +11,7 @@ and open the template in the editor.
 .menuitem{
     float:left;
     padding-top: 8px;
-    width: 120px;
+    width: 114px;
     height: 26px;
     font-family: Verdana;
     font-size: 12px;
@@ -64,7 +64,6 @@ and open the template in the editor.
     margin:3px;
     padding:5px;
     width: 700px;
-    border: 1px solid grey;
     border-radius: 2px;
     background-color: white;
     font-family: Verdana;
@@ -72,58 +71,162 @@ and open the template in the editor.
     font-weight: 200;
     cursor:pointer;
 }
+.resultadob {
+    background-color: #ebebeb;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin:3px;
+    padding:5px;
+    width: 700px;
+    border: 0px solid grey;
+    border-radius: 2px;
+    background-color: white;
+    cursor:pointer;
+}
 .resultado:hover {
-    border: 1px solid black;
     background-color: #ebebeb;
 }
+.resultadob:hover {
+    background-color: white;
+}
 .score {
+    padding-top: 6px;
+    width:70px;
+    height:24px;
+    font-weight: 800;
+    color:silver;
+    float:left;
+}
+.scoreb {
     width:100px;
-    height:16px;
-    font-weight: 600;
+    height:24px;
+    font-weight: 800;
+    color:red;
+    float:left;
+}
+.scoren {
+    width:100px;
+    height:24px;
+    font-weight: 800;
+    color:silver;
+    float:left;
+}
+.scoreg {
+    width:100px;
+    height:24px;
+    font-weight: 800;
     color:green;
     float:left;
 }
 .canal {
-    width:150px;
-    height:16px;
+    width:100px;
+    height:24px;
     float:left;
+    overflow:hidden;
 }
 .titulo {
-    width:250px;
-    height:16px;
+    width:580px;
+    font-size: 20px;
+    color:blue;
+    height:30px;
     float:left;
     overflow:hidden;
 }
 .tema {
-    width:100px;
-    height:16px;
+    width:120px;
+    height:24px;
     float:left;
+    overflow:hidden;
 }
 .user {
-    width:120px;
-    height:16px;
+    width:110px;
+    height:24px;
     float:left;
     overflow:hidden;
 }
 .rating {
     width:80px;
-    height:16px;
+    height:24px;
     float:left;
 }
 .likes {
     width:80px;
-    height:16px;
+    height:24px;
     float:left;
 }
+.commentr {
+    width:600px;
+    margin-bottom: 8px;
+}
 .comment {
-    margin-top:40px;
+    margin-top:15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom:10px;
     width:688px;
+}
+.reslabel{
+    font-weight: 800;
 }
 .procuraarea{
     border: 1px solid silver;
     font-family: Verdana;
     font-size: 13px;
     font-weight: 200;
-    width:200px;
-    height: 80px;
+    width:400px;
+    height: 30px;
+}
+
+.pesquisachooser{
+    width:400px;
+    height: 40px;
+}
+.pesquisachoice{
+    border: 1px solid silver;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 2px;
+    cursor: pointer;
+    float:left;
+}
+.pesquisachoice:hover{
+    border: 1px solid black;
+}
+
+.matchword{
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+
+.resultadoc {
+    min-height: 55px;
+    background-color: #ebebeb;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin:3px;
+    padding:5px;
+    width: 700px;
+    border: 0px solid grey;
+    border-radius: 2px;
+    background-color: white;
+    cursor:pointer;
+}
+
+.resultadou {
+    min-height: 30px;
+    background-color: #ebebeb;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin:3px;
+    padding:5px;
+    width: 700px;
+    border: 0px solid grey;
+    border-radius: 2px;
+    background-color: white;
+    cursor:pointer;
 }
