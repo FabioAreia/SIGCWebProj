@@ -1,0 +1,840 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"chanid",
+				"chanidg"
+			],
+			[
+				"vid",
+				"vididg"
+			],
+			[
+				"com",
+				"compage"
+			],
+			[
+				"las",
+				"lastrequestsuccess"
+			],
+			[
+				"la",
+				"lastcomcount"
+			],
+			[
+				"vi",
+				"videotoget"
+			],
+			[
+				"log",
+				"logit"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"ch",
+				"channelqueue"
+			],
+			[
+				"video",
+				"videoqueue"
+			],
+			[
+				"lastr",
+				"lastreqtype"
+			],
+			[
+				"get",
+				"getYoutubeComents"
+			],
+			[
+				"ret",
+				"returnedvids"
+			],
+			[
+				"res",
+				"resultNum"
+			],
+			[
+				"ex",
+				"exists"
+			],
+			[
+				"chan",
+				"chanidg"
+			],
+			[
+				"da",
+				"dataPost"
+			],
+			[
+				"c",
+				"chanid"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"exi",
+				"existsrel"
+			],
+			[
+				"d",
+				"dataPost"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"max",
+				"max-results"
+			],
+			[
+				"s",
+				"startc"
+			],
+			[
+				"sta",
+				"start-index"
+			],
+			[
+				"m",
+				"maxres"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"acc",
+				"acceptedFormat"
+			],
+			[
+				"getP",
+				"getParent"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"bo",
+				"border-radius"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"ma",
+				"max-height"
+			],
+			[
+				"inde",
+				"indexOf"
+			],
+			[
+				"en",
+				"encode"
+			],
+			[
+				"field",
+				"fieldID"
+			],
+			[
+				"optio",
+				"options"
+			],
+			[
+				"formc",
+				"formcontent"
+			],
+			[
+				"this",
+				"thisInputId"
+			],
+			[
+				"simple",
+				"simplefields"
+			],
+			[
+				"my",
+				"myRequest"
+			],
+			[
+				"for",
+				"formid"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"filelis",
+				"filelistelem"
+			],
+			[
+				"thi",
+				"thisInputId"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"name",
+				"name2Tablename"
+			],
+			[
+				"option",
+				"optional"
+			],
+			[
+				"form",
+				"formval"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"main",
+				"mainForm"
+			],
+			[
+				"th",
+				"thisformid"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"padding-",
+				"padding-right"
+			],
+			[
+				"b",
+				"border-radius"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"p",
+				"padding-right"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"input",
+				"inputElement"
+			],
+			[
+				"va",
+				"varid"
+			],
+			[
+				"simplef",
+				"simplefield_"
+			],
+			[
+				"cond",
+				"cond_field_id"
+			],
+			[
+				"fields",
+				"fieldsel"
+			],
+			[
+				"con",
+				"conddisplist"
+			],
+			[
+				"sub",
+				"submitEditFieldForm"
+			],
+			[
+				"cu",
+				"currentEditID"
+			],
+			[
+				"dcsub",
+				"dcsubrow"
+			],
+			[
+				"top",
+				"topparts"
+			],
+			[
+				"retu",
+				"returnStr"
+			],
+			[
+				"ele",
+				"elementId"
+			],
+			[
+				"add",
+				"addEvent"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"insert",
+				"insertAnotherFieldConditionStart"
+			],
+			[
+				"se",
+				"selectedCond"
+			],
+			[
+				"getR",
+				"getPostRequestSync"
+			],
+			[
+				"select",
+				"selectedRel"
+			],
+			[
+				"pr",
+				"prevs"
+			],
+			[
+				"selcte",
+				"selectedId"
+			],
+			[
+				"var",
+				"varselectinput"
+			],
+			[
+				"ad",
+				"addbut"
+			],
+			[
+				"fie",
+				"fieldSelect"
+			],
+			[
+				"opt",
+				"option"
+			],
+			[
+				"nu",
+				"null"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"init",
+				"initApp"
+			],
+			[
+				"dra",
+				"draggables"
+			],
+			[
+				"i",
+				"inline-block"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"respo",
+				"resposta"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"backgroun",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "youtubecomm/index.php",
+			"settings":
+			{
+				"buffer_size": 9815,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "youtubecomm/getcsv.php",
+			"settings":
+			{
+				"buffer_size": 1886,
+				"line_ending": "Unix",
+				"name": "<?php"
+			}
+		},
+		{
+			"file": "youtubecomm/gettext.php",
+			"settings":
+			{
+				"buffer_size": 1547,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "youtubecomm/getcsvf.php",
+			"settings":
+			{
+				"buffer_size": 1582,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "youtubecomm/localhost.sql",
+			"settings":
+			{
+				"buffer_size": 3009,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "youtubecomm/ginc/db_link.class.php",
+			"settings":
+			{
+				"buffer_size": 7041,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "youtubecomm/jsresp.php",
+			"settings":
+			{
+				"buffer_size": 2800,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/hamaro/Downloads/comments.csv",
+		"/Users/hamaro/Downloads/comments(1).csv",
+		"/Users/hamaro/Downloads/codigo_postal_v2012_shp/convertpoly/9980.osm",
+		"/Users/hamaro/Downloads/codigo_postal_v2012_shp/codigo_postal_v2012.shp",
+		"/Applications/XAMPP/xamppfiles/htdocs/sigc/youtubecomments/jsresp.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/sigc/youtubecomments/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/sigc/youtubecomments/ginc/db_link.class.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/hucbd/javarespdummy.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/hucbd/users.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"formsavebutton",
+			"mainForm",
+			"rightPanRowLargem",
+			"CREATE TABLE IF NOT EXISTS",
+			"updateNewFieldOptions",
+			"').",
+			"temp.getChildren()[0].",
+			"currentEditFieldList",
+			"CAE8CA",
+			"94D194",
+			"loadNewUserForm",
+			"newUserClick",
+			"variaveis",
+			"variableList",
+			"style=\"margin-left:30px;border:1px solid silver;padding:8px;\"",
+			"style=\"height:30px;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"CREATE TABLE",
+			"_'+fid).",
+			"temp.getChildren()[1].getChildren()[0].",
+			"D1FFC2",
+			"CAE8CA",
+			"users",
+			"userList",
+			"class=\"additionalopts\"",
+			"style=\"height:35px;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "youtubecomm/index.php",
+					"settings":
+					{
+						"buffer_size": 9815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1091,
+								1103
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4068.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "youtubecomm/getcsv.php",
+					"settings":
+					{
+						"buffer_size": 1886,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<?php",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 89.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "youtubecomm/gettext.php",
+					"settings":
+					{
+						"buffer_size": 1547,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1547
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 269.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "youtubecomm/getcsvf.php",
+					"settings":
+					{
+						"buffer_size": 1582,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								612,
+								612
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 105.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "youtubecomm/localhost.sql",
+					"settings":
+					{
+						"buffer_size": 3009,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "youtubecomm/ginc/db_link.class.php",
+					"settings":
+					{
+						"buffer_size": 7041,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4089,
+								4098
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2296.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "youtubecomm/jsresp.php",
+					"settings":
+					{
+						"buffer_size": 2800,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								89
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 106.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
